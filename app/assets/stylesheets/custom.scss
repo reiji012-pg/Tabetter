@@ -1,0 +1,84 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* mixins, variables, etc. */
+
+// $bg-main-color: #98fb98;
+$bg-main-color: #5CB85C;
+// $text-main-color: #2e8b57;
+$text-main-color: #DFF0D8;
+
+/* universal */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.bg-main-color {
+  background-color: $bg-main-color;
+}
+
+.text-main-color {
+  color: $text-main-color;
+}
+
+/* header */
+
+.header-logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.9em;
+  font-weight: bold;
+  color: $text-main-color;
+  line-height: 1.9em;
+  &:hover {
+    color:#fff;
+    text-decoration: none;
+  }
+  &:focus {
+    color: $text-main-color;
+  }
+}
+
+.nav > li > a.header-nav {
+  font-size: 1.2em;
+  color: $text-main-color;
+  &:hover {
+    color: #fff;
+  }
+  &:hover, &:focus {
+    background-color: $bg-main-color;
+  }
+}
+
+
+/* footer */
+
+.footer {
+  margin-top: 45px;
+  padding-top: 6px;
+  border-top: 1px solid #eaeaea;
+  color: #999;
+}
+
+.footer-copyright {
+  font-size: 0.8em;
+}
+
+/* home */
+.home-detail {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
