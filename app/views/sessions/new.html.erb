@@ -12,10 +12,15 @@
       <%= f.label :password %>
       <%= f.password_field :password, class: "form-control" %>
       
+      <%= f.label :remember_me, class: "checkbox inline" do %>
+        <%= f.check_box :remember_me %>
+        <span>ログイン情報を保持する場合はチェックを入れてください</span>
+      <% end %>
+      
       <%= f.submit "ログイン！", class: "btn btn-success" %>
     <% end %>
     
-    <p>
+    <p class="signup_link">
       まだアカウント登録をされていない方はこちら
       <%= link_to "今すぐ登録！", signup_path %>
     </p>
