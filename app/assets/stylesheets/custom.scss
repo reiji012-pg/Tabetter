@@ -72,6 +72,31 @@ h1 {
   }
 }
 
+/* dropdown_menu */
+
+.custom-dropdown {
+  min-width: 80px;
+  background-color: $bg-main-color;
+}
+
+.custom-dropdown > li > a {
+  font-size: 1.2em;
+  color: $text-main-color;
+  &:hover {
+    color: #fff;
+    background-color: $bg-main-color;
+  }
+  &:focus {
+    color: $text-main-color;
+    background-color: $bg-main-color;
+  }
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus, 
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: $bg-main-color;
+}
+
 
 /* footer */
 

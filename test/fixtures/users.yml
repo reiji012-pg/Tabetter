@@ -2,5 +2,5 @@
 user<%= n %>:
   name: <%= "user#{n}" %>
   email: <%= "user#{n}@example.com" %>
-  password_digest: "password"
+  password_digest: <%= User.digest("password") %>
 <% end %>
