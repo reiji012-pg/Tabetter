@@ -1,0 +1,17 @@
+<% provide(:title, "更新") %>
+<% provide(:path, user_path) %>
+<% provide(:btn, "更新！") %>
+
+<h1>アカウント情報の更新</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= render "users/form" %>
+    <div class='gravatar_edit'>
+      <%= gravatar_for @user %>
+      <a href="http://gravatar.com/emails" target='_blank' rel='noopener'>
+        画像の更新
+      </a>
+    </div>
+  </div>
+</div>
